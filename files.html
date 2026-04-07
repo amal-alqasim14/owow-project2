@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documents</title>
+
+  <!-- Shared team stylesheet — all CSS for this page is in here -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="files-page">
+  <div class="app-layout">
+
+    <!-- ── Sidebar ───────────────────────────────────────────── -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="images/owow.svg" alt="OWOW logo" />
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item">
+          <i class="fa-solid fa-table-cells-large"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="overview.html" class="nav-item">
+          <i class="fa-solid fa-bars"></i>
+          <span>Overview</span>
+        </a>
+        <a href="roadmap.html" class="nav-item">
+          <i class="fa-regular fa-folder"></i>
+          <span>Roadmap</span>
+        </a>
+        <a href="files.html" class="nav-item active">
+          <i class="fa-regular fa-file-lines"></i>
+          <span>Documents</span>
+        </a>
+        <a href="updates.html" class="nav-item">
+          <i class="fa-regular fa-bell"></i>
+          <span>Updates</span>
+        </a>
+        <a href="links.html" class="nav-item">
+          <i class="fa-solid fa-link"></i>
+          <span>External Links</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- ── Main content ──────────────────────────────────────── -->
+    <main class="main-content">
+      <header class="top-header">
+        <div>
+          <p class="breadcrumb">Projects / Project Lumina / <span>Documents</span></p>
+          <h1 class="project-title">Project Lumina</h1>
+        </div>
+
+        <div class="header-icons">
+          <button class="icon-btn" type="button">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+          <img src="images/profile.png" alt="User avatar" class="avatar" />
+        </div>
+      </header>
+
+      <section class="content-grid">
+        <div class="left-column">
+          <div class="page-heading">
+            <a href="overview.html" class="back-btn">
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <h2>Documents</h2>
+          </div>
+        </section>
+
+      <div class="docs-main-inner">
+
+
+        <!-- Search bar -->
+        <div class="docs-search-wrap">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            id="docs-search"
+            class="docs-search-input"
+            type="text"
+            placeholder="Search documents..."
+            aria-label="Search documents"
+          />
+        </div>
+
+        <!-- Pinned documents — cards injected by documents.js -->
+        <p class="docs-pinned-label">
+          <i class="fa-solid fa-thumbtack"></i>
+          Pinned Documents
+        </p>
+        <div class="docs-pinned-grid" id="docs-pinned-grid"></div>
+
+        <!-- Documents table — rows injected by documents.js -->
+        <div class="docs-table-wrap">
+          <table class="docs-table" aria-label="Project documents">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th class="docs-th-updated">Last Updated</th>
+              </tr>
+            </thead>
+            <tbody id="docs-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Page logic -->
+  <script src="js/files.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="images/owow.svg" alt="OWOW logo" />
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item active">
+          <i class="fa-solid fa-table-cells-large"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="overview.html" class="nav-item">
+          <i class="fa-solid fa-bars"></i>
+          <span>Overview</span>
+        </a>
+        <a href="roadmap.html" class="nav-item">
+          <i class="fa-regular fa-folder"></i>
+          <span>Roadmap</span>
+        </a>
+        <a href="documents.html" class="nav-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <span>Documents</span>
+        </a>
+        <a href="updates.html" class="nav-item">
+          <i class="fa-regular fa-bell"></i>
+          <span>Updates</span>
+        </a>
+        <a href="links.html" class="nav-item">
+          <i class="fa-solid fa-link"></i>
+          <span>External Links</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <h1>Projects</h1>
+
+        <div class="topbar-right">
+          <button class="icon-btn">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+
+          <div class="profile-avatar">
+            <img src="images/profile.png" alt="Profile picture" />
+          </div>
+        </div>
+      </header>
+
+      <section class="projects-grid">
+        <article class="project-card">
+          <div class="card-top">
+            <div>
+              <div class="project-title-row">
+                <h2>Project Lumina</h2>
+                <span class="status-badge green">ON TRACK</span>
+              </div>
+              <p class="phase">Phase: Development</p>
+            </div>
+
+            <button class="open-btn">
+              Open project
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="progress-section">
+            <div class="progress-head">
+              <span>OVERALL PROGRESS</span>
+              <span>65%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 65%;"></div>
+            </div>
+          </div>
+
+          <div class="project-meta">
+            <div>
+              <p class="meta-label">NEXT MILESTONE</p>
+              <p class="meta-value">Beta Launch</p>
+            </div>
+
+            <div>
+              <p class="meta-label">LATEST UPDATE</p>
+              <p class="meta-value">Oct 12, 2023</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="description-box">
+              <p class="meta-label">DESCRIPTION</p>
+              <p class="description-text">
+                Project Lumina is a digital product focused on scalability and user
+                experience. The goal is to build a reliable and efficient solution.
+              </p>
+            </div>
+
+            <div class="manager-box">
+              <img src="images/profile.png" alt="Sarah Jenkins" />
+              <div class="manager-info">
+                <span class="manager-role">Project Manager</span>
+                <span class="manager-name">Sarah Jenkins</span>
+              </div>
+              <button class="contact-btn">CONTACT</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-top">
+            <div>
+              <div class="project-title-row">
+                <h2>Nexus Branding</h2>
+                <span class="status-badge orange">NEEDS REVIEW</span>
+              </div>
+              <p class="phase">Phase: Design</p>
+            </div>
+
+            <button class="open-btn">
+              Open project
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="progress-section">
+            <div class="progress-head">
+              <span>OVERALL PROGRESS</span>
+              <span>75%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 75%;"></div>
+            </div>
+          </div>
+
+          <div class="project-meta">
+            <div>
+              <p class="meta-label">NEXT MILESTONE</p>
+              <p class="meta-value">Logo Concept Presentation</p>
+            </div>
+
+            <div>
+              <p class="meta-label">LATEST UPDATE</p>
+              <p class="meta-value">Oct 14, 2023</p>
+            </div>
+          </div>
+
+          <div class="card-bottom">
+            <div class="description-box">
+              <p class="meta-label">DESCRIPTION</p>
+              <p class="description-text">
+                Nexus Branding is a project focused on creating a modern visual
+                identity. It includes logo design and key brand elements.
+              </p>
+            </div>
+
+            <div class="manager-box">
+              <img src="images/profile.png" alt="Sarah Jenkins" />
+              <div class="manager-info">
+                <span class="manager-role">Project Manager</span>
+                <span class="manager-name">Sarah Jenkins</span>
+              </div>
+              <button class="contact-btn">CONTACT</button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="cta-section">
+        <div class="briefing-card">
+          <h3>Need a new project?</h3>
+          <p>Schedule a kick-off meeting with our strategy team.</p>
+          <button>Start Briefing</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

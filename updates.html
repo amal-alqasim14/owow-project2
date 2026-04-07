@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Updates</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="updates-page">
+  <div class="app-layout">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="images/owow.svg" alt="OWOW logo" />
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item">
+          <i class="fa-solid fa-table-cells-large"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="overview.html" class="nav-item">
+          <i class="fa-solid fa-bars"></i>
+          <span>Overview</span>
+        </a>
+        <a href="roadmap.html" class="nav-item">
+          <i class="fa-regular fa-folder"></i>
+          <span>Roadmap</span>
+        </a>
+        <a href="files.html" class="nav-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <span>Documents</span>
+        </a>
+        <a href="updates.html" class="nav-item active">
+          <i class="fa-regular fa-bell"></i>
+          <span>Updates</span>
+        </a>
+        <a href="links.html" class="nav-item">
+          <i class="fa-solid fa-link"></i>
+          <span>External Links</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-header">
+        <div>
+          <p class="breadcrumb">Projects / Project Lumina /  <span>Updates</span></p>
+          <h1 class="project-title">Project Lumina</h1>
+        </div>
+
+        <div class="header-icons">
+          <button class="icon-btn" type="button">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+          <img src="images/profile.png" alt="User avatar" class="avatar" />
+        </div>
+      </header>
+
+      <section class="content-grid">
+        <div class="left-column">
+          <div class="page-heading">
+            <a href="overview.html" class="back-btn">
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <h2>Updates</h2>
+          </div>
+
+          <div class="featured-card" id="featuredCard">
+            <div class="featured-top">
+              <span class="tag dark" id="featuredTag">Milestone</span>
+              <span class="date" id="featuredDate">Oct 24, 2026</span>
+            </div>
+
+            <div class="featured-body">
+              <div>
+                <h3 id="featuredTitle">Sprint 4 Completed</h3>
+                <p id="featuredDescription">
+                  We have successfully completed the design phase and have moved into
+                  development. All core UI components have been approved.
+                </p>
+              </div>
+
+              <div class="rocket-icon">
+                <i class="fa-regular fa-paper-plane"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="search-row">
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="searchInput" placeholder="Search updates..." />
+            </div>
+          </div>
+
+          <section class="timeline-section">
+            <h4 class="section-label">THIS WEEK</h4>
+            <div class="timeline" id="thisWeekTimeline"></div>
+          </section>
+
+          <section class="timeline-section">
+            <h4 class="section-label">LAST WEEK</h4>
+            <div class="timeline" id="lastWeekTimeline"></div>
+          </section>
+        </div>
+
+        <aside class="right-column">
+          <div class="info-card">
+            <p class="card-label">CURRENT STATUS</p>
+            <div class="status-box">
+              <div class="status-icon green">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h3 id="currentStatus">On Track</h3>
+                <p id="statusUpdatedText">Last updated today</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <p class="card-label">NEXT MILESTONE</p>
+            <span class="date-pill" id="milestoneDate">Nov 15, 2026</span>
+            <h3 id="milestoneTitle">Beta Release</h3>
+            <p id="milestoneDescription">
+              Internal testing environment deployed for stakeholder review.
+            </p>
+
+            <div class="progress-bar">
+              <div class="progress-fill" id="progressFill" data-progress="65"></div>
+            </div>
+            <p class="progress-text" id="progressText">65% complete</p>
+          </div>
+
+          <div class="info-card">
+            <p class="card-label">LATEST DOCUMENT</p>
+            <div class="document-box">
+              <div class="pdf-icon">
+                <i class="fa-regular fa-file-pdf"></i>
+              </div>
+              <div>
+                <h4 id="latestDocumentName">Sprint_4_Report.pdf</h4>
+                <p id="latestDocumentMeta">2.4 MB • Uploaded Oct 24</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/updates.js"></script>
+</body>
+</html>

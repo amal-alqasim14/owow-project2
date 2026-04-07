@@ -1,0 +1,15 @@
+const form = document.getElementById("loginForm");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  if (email === "" || password === "") {
+    alert("Fill all fields");
+    return;
+  }
+
+  window.location.href = "index.html";
+});

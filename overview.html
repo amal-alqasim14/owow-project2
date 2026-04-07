@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Overview – OWOW</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body style="display: block;">
+      <div class="app-layout">
+
+    <!-- ── Sidebar ─────────────────────────────── -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="images/owow.svg" alt="OWOW logo" />
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item">
+          <i class="fa-solid fa-table-cells-large"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="overview.html" class="nav-item active">
+          <i class="fa-solid fa-bars"></i>
+          <span>Overview</span>
+        </a>
+        <a href="roadmap.html" class="nav-item">
+          <i class="fa-regular fa-folder"></i>
+          <span>Roadmap</span>
+        </a>
+        <a href="files.html" class="nav-item">
+          <i class="fa-regular fa-file-lines"></i>
+          <span>Documents</span>
+        </a>
+        <a href="updates.html" class="nav-item">
+          <i class="fa-regular fa-bell"></i>
+          <span>Updates</span>
+        </a>
+        <a href="links.html" class="nav-item">
+          <i class="fa-solid fa-link"></i>
+          <span>External Links</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- ── Main ───────────────────────────────── -->
+    <main class="main-content">
+
+      <!-- Header -->
+      <header class="top-header" style="background-color: #ffffff;">
+        <div>
+          <p class="breadcrumb">Projects / <span>Project Lumina</span></p>
+          <h1 class="project-title">Project Lumina</h1>
+        </div>
+        <div class="header-icons">
+          <button class="icon-btn" type="button" aria-label="Notifications">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+          <img src="images/profile.png" alt="User avatar" class="avatar" />
+        </div>
+      </header>
+
+      <section class="content-grid">
+        <div class="left-column">
+          <div class="page-heading">
+            <a href="index.html" class="back-btn">
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <h2>Project Overview</h2>
+          </div>
+        </section>
+
+      <div class="ov-stat-row">
+
+        <div class="ov-stat-card">
+          <p class="ov-stat-label">Current Phase</p>
+          <p class="ov-stat-value">Design &amp; Discovery</p>
+        </div>
+
+        <div class="ov-stat-card">
+          <p class="ov-stat-label">Next Milestone</p>
+          <p class="ov-stat-value">
+            UI Handover <span class="ov-muted">(Oct 15)</span>
+          </p>
+        </div>
+
+        <div class="ov-stat-card">
+          <p class="ov-stat-label">Status</p>
+          <p class="ov-stat-value ov-status-line">
+            <span class="ov-status-dot"></span>
+            On Track
+          </p>
+        </div>
+
+      </div>
+
+      <div class="ov-main-grid">
+
+        <!-- Left column -->
+        <div>
+
+          <!-- Progress Preview -->
+          <div class="ov-section-header">
+            <span class="ov-section-title">Progress Preview</span>
+            <a href="roadmap.html" class="ov-section-link">View milestones</a>
+        </div>
+
+          <div class="ov-progress-card">
+
+            <!-- Discovery -->
+            <div class="ov-phase-row">
+              <div class="ov-phase-meta">
+                <span class="ov-phase-name">Discovery</span>
+                <span class="ov-phase-status ov-active-status">100% Complete</span>
+              </div>
+              <div class="ov-phase-bar">
+                <div class="ov-phase-fill" style="width: 100%;"></div>
+              </div>
+            </div>
+
+            <!-- Design -->
+            <div class="ov-phase-row">
+              <div class="ov-phase-meta">
+                <span class="ov-phase-name">Design</span>
+                <span class="ov-phase-status ov-active-status">75% Progress</span>
+              </div>
+              <div class="ov-phase-bar">
+                <div class="ov-phase-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+
+            <!-- Development -->
+            <div class="ov-phase-row">
+              <div class="ov-phase-meta">
+                <span class="ov-phase-name ov-inactive">Development</span>
+                <span class="ov-phase-status">Planned</span>
+              </div>
+              <div class="ov-phase-bar">
+                <div class="ov-phase-fill" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <!-- Launch -->
+            <div class="ov-phase-row">
+              <div class="ov-phase-meta">
+                <span class="ov-phase-name ov-inactive">Launch</span>
+                <span class="ov-phase-status">Pending</span>
+              </div>
+              <div class="ov-phase-bar">
+                <div class="ov-phase-fill" style="width: 0%;"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Overall Progress -->
+          <div class="ov-overall-card">
+            <p class="ov-overall-label">Overall Progress</p>
+            <div class="ov-overall-bar-wrap">
+              <div class="ov-overall-bar">
+                <div class="ov-overall-fill" style="width: 65%;"></div>
+              </div>
+              <span class="ov-overall-pct">65%</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right column -->
+        <div class="ov-right-col">
+
+          <!-- Latest Update -->
+          <div>
+            <div class="ov-section-header">
+              <span class="ov-section-title">Latest Update</span>
+              <a href="updates.html" class="ov-section-link">View all</a>
+            </div>
+            <div class="ov-update-card">
+              <p class="ov-update-meta">Posted 2 days ago</p>
+              <p class="ov-update-text">
+                "Finalized color palette and typography system. We've also updated
+                the button components to reflect the new brand guidelines..."
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick Navigation -->
+          <div>
+            <p class="ov-quicknav-title">Quick Navigation</p>
+            <div class="ov-nav-grid">
+              <a href="roadmap.html" class="ov-nav-btn">ROADMAP</a>
+              <a href="files.html" class="ov-nav-btn">DOCS</a>
+              <a href="updates.html" class="ov-nav-btn">UPDATES</a>
+              <a href="links.html" class="ov-nav-btn">LINKS</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+</body>
+</html>
