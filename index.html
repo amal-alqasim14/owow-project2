@@ -19,26 +19,6 @@
           <i class="fa-solid fa-table-cells-large"></i>
           <span>Dashboard</span>
         </a>
-        <a href="overview.html" class="nav-item">
-          <i class="fa-solid fa-bars"></i>
-          <span>Overview</span>
-        </a>
-        <a href="roadmap.html" class="nav-item">
-          <i class="fa-regular fa-folder"></i>
-          <span>Roadmap</span>
-        </a>
-        <a href="documents.html" class="nav-item">
-          <i class="fa-regular fa-file-lines"></i>
-          <span>Documents</span>
-        </a>
-        <a href="updates.html" class="nav-item">
-          <i class="fa-regular fa-bell"></i>
-          <span>Updates</span>
-        </a>
-        <a href="links.html" class="nav-item">
-          <i class="fa-solid fa-link"></i>
-          <span>External Links</span>
-        </a>
       </nav>
     </aside>
 
@@ -47,7 +27,7 @@
         <h1>Projects</h1>
 
         <div class="topbar-right">
-          <button class="icon-btn">
+          <button class="icon-btn" type="button" aria-label="Notifications">
             <i class="fa-regular fa-bell"></i>
           </button>
 
@@ -68,10 +48,10 @@
               <p class="phase">Phase: Development</p>
             </div>
 
-            <button class="open-btn">
+            <a href="overview.html" class="open-btn">
               Open project
               <i class="fa-solid fa-arrow-right"></i>
-            </button>
+            </a>
           </div>
 
           <div class="progress-section">
@@ -111,7 +91,7 @@
                 <span class="manager-role">Project Manager</span>
                 <span class="manager-name">Sarah Jenkins</span>
               </div>
-              <button class="contact-btn">CONTACT</button>
+              <button class="contact-btn" type="button">CONTACT</button>
             </div>
           </div>
         </article>
@@ -126,7 +106,7 @@
               <p class="phase">Phase: Design</p>
             </div>
 
-            <button class="open-btn">
+            <button class="open-btn disabled" type="button" title="Not available yet">
               Open project
               <i class="fa-solid fa-arrow-right"></i>
             </button>
@@ -169,7 +149,7 @@
                 <span class="manager-role">Project Manager</span>
                 <span class="manager-name">Sarah Jenkins</span>
               </div>
-              <button class="contact-btn">CONTACT</button>
+              <button class="contact-btn" type="button">CONTACT</button>
             </div>
           </div>
         </article>
@@ -179,7 +159,7 @@
         <div class="briefing-card">
           <h3>Need a new project?</h3>
           <p>Schedule a kick-off meeting with our strategy team.</p>
-          <button>Start Briefing</button>
+          <button type="button">Start Briefing</button>
         </div>
       </section>
     </main>
