@@ -11,5 +11,5 @@ form.addEventListener("submit", function (e) {
     return;
   }
 
-  window.location.href = "index.html";
+  window.location.href = "dashboard.html";
 });
